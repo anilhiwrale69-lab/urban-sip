@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Sip | Premium Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="brand-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--clr-primary-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                    Urban <span class="text-blue">Sip</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#order" class="btn btn-primary nav-btn">Order Now</a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Scroll Cinematic Section -->
+    <section class="hero-scroll-wrapper" id="home">
+        <div class="hero-sticky">
+            <canvas id="hero-canvas"></canvas>
+            
+            <!-- Scene 1: Hero Introduction -->
+            <div class="scene-overlay scene-1">
+                <span class="badge">Signature Drink</span>
+                <h1>BESTSELLER<br><span class="text-blue">COFFEE</span></h1>
+                <p>Experience the perfect blend of premium roasted beans, velvety milk, and a touch of sweetness.</p>
+                <div class="hero-buttons">
+                    <a href="#order" class="btn btn-primary">Order Now</a>
+                    <a href="#menu" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+
+            <!-- Scene 3: Secondary Product Reveal -->
+            <div class="scene-overlay scene-3">
+                <h1>FRESH <span class="text-blue">BAKES</span></h1>
+                <p>Warm, comforting, and baked fresh every morning. Pair it with your favorite brew.</p>
+            </div>
+
+            <!-- Scene 5: Brand Conclusion -->
+            <div class="scene-overlay scene-5">
+                <h2>A New Take on <span class="text-blue">Café Culture</span></h2>
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories Section -->
+    <section class="menu-categories" id="menu">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Explore Our Menu</h2>
+                <p>A curated selection of premium food and beverages, crafted with passion.</p>
+            </div>
+            <div class="grid categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=800" alt="Premium Coffee">
+                    </div>
+                    <div class="card-content">
+                        <h3>Coffee</h3>
+                        <p>Artisanal brews & espresso.</p>
+                    </div>
+                </div>
+                <!-- Category 2 -->
+                <div class="category-card fade-up" style="transition-delay: 100ms;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=800" alt="Premium Desserts">
+                    </div>
+                    <div class="card-content">
+                        <h3>Desserts</h3>
+                        <p>Sweet treats & pastries.</p>
+                    </div>
+                </div>
+                <!-- Category 3 -->
+                <div class="category-card fade-up" style="transition-delay: 200ms;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800" alt="Fresh Bakes">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bakes</h3>
+                        <p>Freshly baked bread & buns.</p>
+                    </div>
+                </div>
+                <!-- Category 4 -->
+                <div class="category-card fade-up" style="transition-delay: 300ms;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&q=80&w=800" alt="Gourmet Sandwiches">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sandwiches</h3>
+                        <p>Gourmet fillings on fresh naan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Slider Section -->
+    <section class="brand-story" id="story">
+        <div class="container">
+            <div class="slider-container fade-up">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1200" alt="Café Interior 1">
+                        <div class="slide-content">
+                            <h3>Curated Ambiance</h3>
+                            <p>A sanctuary of minimalist design, built to inspire focus and relaxation.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=1200" alt="Café Interior 2">
+                        <div class="slide-content">
+                            <h3>Uncompromising Quality</h3>
+                            <p>We source only the finest, ethically grown beans for an exceptional taste.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=1200" alt="Coffee Brewing 3">
+                        <div class="slide-content">
+                            <h3>Community First</h3>
+                            <p>More than a café, it's a gathering place for creatives and visionaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>What Our Guests Say</h2>
+            </div>
+            <div class="grid testimonials-grid">
+                <!-- Review 1 -->
+                <div class="review-card fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Absolutely love the minimalist vibe here. The signature cold coffee is out of this world, perfectly balanced and refreshing."</p>
+                    <div class="reviewer">
+                        <h4>Sarah Jenkins</h4>
+                        <span>Local Guide</span>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-card fade-up" style="transition-delay: 100ms;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"The naan sandwiches are a revelation. Fast service, premium quality, and a great place to get some work done."</p>
+                    <div class="reviewer">
+                        <h4>David Chen</h4>
+                        <span>Designer</span>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-card fade-up" style="transition-delay: 200ms;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"My new favorite spot in the city. The aesthetic is stunning and the pastries are baked fresh every morning."</p>
+                    <div class="reviewer">
+                        <h4>Emily Roberts</h4>
+                        <span>Food Blogger</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Contact Section -->
+    <section class="about-contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info fade-up">
+                <h2>Visit <span class="text-blue">Us</span></h2>
+                <p>Drop by for your daily dose of perfection.</p>
+                
+                <div class="info-blocks">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt text-blue"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Minimalist Avenue<br>Design District, CA 90210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock text-blue"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon - Fri: 7:00 AM - 8:00 PM<br>Sat - Sun: 8:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt text-blue"></i>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>+1 (555) 123-4567<br>hello@urbansip.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:hello@urbansip.com" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+            
+            <div class="contact-map fade-up" style="transition-delay: 150ms;">
+                <!-- Decorative element for contact area instead of real map to keep it clean -->
+                <div class="map-placeholder">
+                    <div class="map-circle"></div>
+                    <div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="NOMeat Naan Logo">
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Urban Sip. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
